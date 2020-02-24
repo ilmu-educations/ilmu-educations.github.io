@@ -1,2 +1,2 @@
 # ilmu-educations.github.io
-HomePage
+This page has yet not been initialised
