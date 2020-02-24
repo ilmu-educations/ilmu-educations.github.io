@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<title>
+	</title>
+	<head>
+	</head>
+
+	<body>
+
+	<h1>Hey Raiyan!</h1>
+	<p>How are you doing?</p>
+	<p>Here are this week's tasks:
+		<ol>
+			<li id="line1">Guideline for ON 2010 v11</li>
+			<li id="line2">Guideline for ON 2011 v11</li>
+			<li id="line3">Guideline for ON 2012 v11</li>
+		</ol>
+	</p>
+
+	<script>
+
+document.getElementById("line1").onclick = function() {clickFunction("line1")};
+document.getElementById("line2").onclick = function() {clickFunction("line2")};
+document.getElementById("line3").onclick = function() {clickFunction("line3")};
+
+
+function clickFunction(id) {
+	var text = document.getElementById(id).textContent;
+  document.getElementById(id).innerHTML = text + " DONE!!!";
+}
+
+</script>
+	</body>
+</html>
