@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<title>
+	</title>
+	<head>
+	</head>
+
+	<body>
+
+	<h1>Welcome Dibya!</h1>
+	<p>How are you?</p>
+	<p>Here are this week's tasks:
+		<ul>
+			<li id="line1">Sorting of ON 2016 v11</li>
+			<li id="line2">Sorting of MJ 2013 v11</li>
+		<ul>
+	</p>
+
+	<script>
+
+document.getElementById("line1").onclick = function() {clickFunction("line1")};
+document.getElementById("line2").onclick = function() {clickFunction("line2")};
+
+
+function clickFunction(id) {
+  document.getElementById(id).style.color = "#27cf09";
+	var text = document.getElementById(id).textContent;
+  document.getElementById(id).innerHTML = text + " DONE!!!";
+}
+
+</script>
+	</body>
+</html>

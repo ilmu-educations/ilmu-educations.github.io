@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<title>
+	</title>
+	<head>
+	</head>
+
+	<body>
+
+	<h1>Hey Sadid!</h1>
+	<p>Yabaladobdon!!</p>
+	<p>Here are this week's tasks:
+		<ul>
+			<li id="line1">Sorting of MJ 2014 v11</li>
+		<ul>
+	</p>
+
+	<script>
+
+document.getElementById("line1").onclick = function() {clickFunction("line1")};
+
+
+function clickFunction(id) {
+  document.getElementById(id).style.color = "#27cf09";
+	var text = document.getElementById(id).textContent;
+  document.getElementById(id).innerHTML = text + " DONE!!!";
+}
+
+</script>
+	</body>
+</html>
